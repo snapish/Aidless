@@ -20,9 +20,7 @@ public class Node {
     public boolean locked; // whether or not the player can use it
     public ArrayList<Resource> resourceTaken ;  //what kind of resource the node takes away, could let it take more than one for more complex
     public ArrayList<Resource> resourceGiven; //names/types of what it gives to the player. Could be used for things like display name of the node or for code like, "all nodes that give x do y"
-    public Page pageRequired; //a way to check if the person has progressed enough to use the node. can also mark if the person has completed a chapter, and check if this page is in the chapter
-    public Page defaultPage = new Page();
-    public Resource defaultResource = new Resource();
+
 
     public interface chargeRate{
 
@@ -33,7 +31,7 @@ public class Node {
     /*
      * Creates a default Node object with all barebones dummy data
      */
-    public Node(){
+    public Node(Resource resource){
         this.gainedPerHour = 1.0;
         this.name = "test name";
         this.resourcesAssigned = 0;
@@ -41,9 +39,8 @@ public class Node {
         this.locked = false;
         ArrayList<Resource> temp1 = new ArrayList<>();
         ArrayList<Resource> temp2 = new ArrayList<>();
-        temp1.add(defaultResource);
-        temp2.add(defaultResource);
-        this.pageRequired = defaultPage;
+        temp1.add(resource);
+        temp2.add(resource);
         this.resourceTaken = temp1;
         this.resourceGiven = temp2;
     }
@@ -58,7 +55,6 @@ public class Node {
         this.resourcesAssigned =wa;
         this.gainedPerHour = gph;
         this.locked = l;
-        this.pageRequired = r;
     }
 
     public void giveResource(){

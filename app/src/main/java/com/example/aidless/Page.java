@@ -7,9 +7,9 @@ import java.util.Map;
 public class Page {
     public String name;
     public String objective; //something like "obtain x amount of resource Y" , or spend X time doing something w\e the goal is
-    public Map<Resource, Integer> resourceReward;
-    public ArrayList<Resource> resourceRewardArray; //a list of resources that are involved in the chapter maybe? TODO NOT FINAL ON WHETHER OR NOT I WANNA KEEP/USE THIS
-
+   // public Map<Resource, Integer> resourceReward;
+   // public ArrayList<Resource> resourceRewardArray; //a list of resources that are involved in the chapter maybe? TODO NOT FINAL ON WHETHER OR NOT I WANNA KEEP/USE THIS
+    public static int numberOfPages;
 
     /*
      * Creates a default page object with all barebones dummy data
@@ -17,10 +17,7 @@ public class Page {
     public Page(){
         this.name = "test name";
         this.objective = "test objective";
-        this.resourceReward = new HashMap<Resource, Integer>();
-        this.resourceReward.put(new Resource(), 1);
-        this.resourceRewardArray.add(new Resource());
-
+        numberOfPages += 1;
     }
 
     /*

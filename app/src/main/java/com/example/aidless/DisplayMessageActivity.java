@@ -20,10 +20,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView text = findViewById(R.id.textView2);
         text.setText(message);
         text.setAllCaps(true);
-        Page testPage = new Page();
+        Page p = new Page();
+        Chapter c = new Chapter(p);
+        Book b = new Book(c);
+        Resource r = new Resource(b);
         Map<Resource, Integer> testMap = new HashMap<>();
-        testMap.put(new Resource(), 1);
-        testPage.endingReward(testMap);
+       // testMap.put(, 1);
+       // testPage.endingReward(testMap);
 
     }
 
