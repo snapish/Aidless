@@ -25,11 +25,10 @@ public class Page {
     * TODO ADD SOME OPERATION TO MOVE THE PLAYER TO THE NEXT PAGE IN THE CHAPTER
     */
     public void endingReward(Map<Resource, Integer>... rew){
+        System.out.println("in");
         for (Map<Resource, Integer> reward :  rew ) {
         System.out.println(reward.entrySet().iterator().next());
         System.out.println(reward);
-
-            //if(this.resourceRewardArray.contains(reward.entrySet().iterator().next()))
         }
     }
 

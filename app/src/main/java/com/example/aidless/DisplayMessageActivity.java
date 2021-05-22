@@ -25,9 +25,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Book b = new Book(c);
         Resource r = new Resource(b);
         Map<Resource, Integer> testMap = new HashMap<>();
-       // testMap.put(, 1);
-       // testPage.endingReward(testMap);
+        testMap.put(r, 1);
+        if(r.name.contains("test")){
+        p.endingReward(testMap);
 
+        }
     }
 
 }
