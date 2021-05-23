@@ -1,6 +1,5 @@
 package com.example.aidless;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Resource {
@@ -23,5 +22,7 @@ public class Resource {
         this.booksUsedIn = new ArrayList<>();
         this.booksUsedIn.add(book);
     }
-
+    public String getResourceName(){
+        return this.name;
+    }
 }

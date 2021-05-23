@@ -1,16 +1,18 @@
 package com.example.aidless;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
-import java.util.Map;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +26,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Chapter c = new Chapter(p);
         Book b = new Book(c);
         Resource r = new Resource(b);
-        Map<Resource, Integer> testMap = new HashMap<>();
-        testMap.put(r, 1);
-        if(r.name.contains("test")){
+        HashMap<String, Integer> testMap = new HashMap<>();
+        testMap.put(r.name, 1);
         p.endingReward(testMap);
-
-        }
     }
-
 }

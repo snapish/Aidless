@@ -11,8 +11,9 @@ public class Player {
     public Map<Book,Map<Resource, Long> > resourceData; //bad name, a map for holding all the resources a person owns. Divided by book to get specific to that play through
     public int points; //super bad name, for tracking how many "points" they've gotten from completeing books/chapters TODO: RENAME POINTS
     public int coins; //another really bad name but this would represent mtx tokens they can buy/earn TODO: RENAME COINS
-    public static String settings; //again not for this format but the settings need to be saved somewhere
 
+    public Player(){
 
+    }
 
 }
