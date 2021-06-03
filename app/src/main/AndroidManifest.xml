@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aidless">
+    package="com.the_bois.aidless">
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aidless">
-        <activity android:name=".AllBooks"></activity>
+        <activity android:name="com.the_bois.aidless.AllBooks"></activity>
         <activity
-            android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:name="com.the_bois.aidless.DisplayMessageActivity"
+            android:parentActivityName="com.the_bois.aidless.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.the_bois.aidless.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.the_bois.aidless.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

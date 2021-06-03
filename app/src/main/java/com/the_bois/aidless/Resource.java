@@ -1,4 +1,4 @@
-package com.example.aidless;
+package com.the_bois.aidless;
 
 import java.util.ArrayList;
 

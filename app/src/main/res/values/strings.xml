@@ -3,4 +3,6 @@
     <string name="peepee">poopoo</string>
     <string name="enterMessage">Enter a message</string>
     <string name="buttonSend">Button Time!!</string>
+    <string name="channel_description">afk notification channel</string>
+    <string name="channel_name">afkNotificationChannel</string>
 </resources>

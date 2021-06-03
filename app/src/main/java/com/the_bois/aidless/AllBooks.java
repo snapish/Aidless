@@ -1,4 +1,4 @@
-package com.example.aidless;
+package com.the_bois.aidless;
 
 import android.os.Bundle;
 import android.view.View;
