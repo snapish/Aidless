@@ -1,8 +1,5 @@
 package com.example.aidless;
 
-import java.sql.Array;
-import java.sql.Time;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 
 /*
@@ -55,6 +52,10 @@ public class Node {
         this.resourcesAssigned =wa;
         this.gainedPerHour = gph;
         this.locked = l;
+    }
+
+    public void clickProgress(){
+
     }
 
     public void giveResource(){

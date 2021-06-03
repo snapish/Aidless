@@ -1,0 +1,37 @@
+{
+  "playerData": {
+    "perkPoints": 4,
+    "UUID": "Some value we assign to the player on the server side. We'd use this to validate a user ",
+    ""
+  },
+  "resourceData": {
+    "IronBar": {
+      "usableNumber": 323214511,
+      "unusableNumber": 2351,
+      "totalObtained": 0,
+      "currentlyHarvesting": false,
+      "booksSeenIn": "this would get filled in somewhere else dynamically"
+    }
+  },
+
+  "bookData": {
+    "totalBooks": 5,
+    "unlockedBooks": {
+      "testBook" : true,
+      "futureBook1" : false,
+      "futureBook2" : false,
+      "futureBook3" : false,
+      "futureBook4" : false
+    }
+  },
+
+  "settingsData": {
+    "moveThisToFutureFile" : true,
+    "experimental": {
+      "experimentalSettingsWeDontWantToShowYet": true
+    }
+  },
+  "statsData":{
+    "need a stats guy": true
+}
+}
