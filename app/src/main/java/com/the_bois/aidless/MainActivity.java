@@ -15,13 +15,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.the_bois.aidless.MESSAGE";
     public static final long ALERT_USER_TIMEOUT = 15000; // 1 min = 1 * 60 * 1000ms
     private static final String CHANNEL_ID = "afkNotificationChannel";
 
-    private void createNotificationChannel() {
+    private void createNotificationChannel() throws FileNotFoundException {
+
+
+
+        FileInputStream serviceAccount = new FileInputStream("app/aidless-firebase-adminsdk-br07g-0e42a38f50.json");
+        FirebaseOptions options = new FirebaseOptions.Builder().setCredentials(GoogleCredentials.fromStream(serviceAccount)).build();
+        FirebaseApp.initializeApp(options);
+
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

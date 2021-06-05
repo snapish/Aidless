@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801454372898",
+    "project_id": "aidless",
+    "storage_bucket": "aidless.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801454372898:android:8df0afd43d02c11e5c727b",
+        "android_client_info": {
+          "package_name": "com.the_bois.aidless"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801454372898-i5sct64plv6ua8d9lokglnj7ln1vflpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtTgPMMMS_D2cMxk36vU9zflgIZm91a7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801454372898-i5sct64plv6ua8d9lokglnj7ln1vflpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
