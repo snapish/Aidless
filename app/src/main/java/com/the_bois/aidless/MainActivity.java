@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void createNotificationChannel() throws FileNotFoundException {
 
-
-
         FileInputStream serviceAccount = new FileInputStream("app/aidless-firebase-adminsdk-br07g-0e42a38f50.json");
         FirebaseOptions options = new FirebaseOptions.Builder().setCredentials(GoogleCredentials.fromStream(serviceAccount)).build();
         FirebaseApp.initializeApp(options);
